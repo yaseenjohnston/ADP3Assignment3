@@ -27,6 +27,10 @@ public class Hourly extends Employee {
         return hours;
     }
 
+    @Override
+    public double pay() {
+        return rate * hours;
+    }
 
     @Override
     public String toString() {

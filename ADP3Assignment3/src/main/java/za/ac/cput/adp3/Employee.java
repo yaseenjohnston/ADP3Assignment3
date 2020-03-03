@@ -1,6 +1,6 @@
 package za.ac.cput.adp3;
 
-public abstract class Employee {
+public abstract class Employee implements Payable{
 
     private String name;
 
@@ -10,6 +10,10 @@ public abstract class Employee {
 
     public String getName() {
         return name;
+    }
+
+    private void setName(String nm) {
+        name = nm;
     }
 
     public String toString() {

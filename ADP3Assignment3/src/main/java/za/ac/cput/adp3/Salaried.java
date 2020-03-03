@@ -18,6 +18,11 @@ public class Salaried extends Employee {
     }
 
     @Override
+    public double pay() {
+        return salary;
+    }
+
+    @Override
     public String toString() {
         return super.toString() + " (salary is " + salary + ")";
     }
